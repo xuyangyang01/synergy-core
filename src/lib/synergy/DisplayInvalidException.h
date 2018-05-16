@@ -23,17 +23,13 @@
 #include <string>
 
 class DisplayInvalidException : public std::runtime_error {
-    public:
-        DisplayInvalidException(const char* msg):
-                std::runtime_error(msg)
-        {
-        }
+public:
+    DisplayInvalidException (const char* msg) : std::runtime_error (msg) {
+    }
 
-        DisplayInvalidException(std::string msg):
-                std::runtime_error(msg)
-        {
-        }
+    DisplayInvalidException (std::string msg) : std::runtime_error (msg) {
+    }
 };
 
 
-#endif //SYNERGY_DISPLAYINVALIDEXCEPTION_H
+#endif // SYNERGY_DISPLAYINVALIDEXCEPTION_H
